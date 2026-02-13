@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    background-color: #010409;
+    color: #f0f6fc;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.github-header {
+    background-color: #010409;
+    border-bottom: 1px solid #21262d;
+    padding: 16px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.github-logo {
+    width: 32px;
+    height: 32px;
+    fill: #f0f6fc;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0f6fc;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+}
+
+.card {
+    background-color: #0c1015;
+    border: 1px solid #21262d;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 16px 32px rgba(1, 4, 9, 0.85);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #f0f6fc;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #30363d;
+    border-top: 3px solid #58a6ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+.muted {
+    color: #8b949e;
+    font-size: 14px;
+}
+
+.github-footer {
+    background-color: #010409;
+    border-top: 1px solid #21262d;
+    padding: 24px;
+    margin-top: auto;
+}
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 24px;
+    height: 24px;
+    fill: #6e7681;
+}
+
+.footer-copyright {
+    color: #6e7681;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: #58a6ff;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 640px) {
+    .card { padding: 24px; }
+    h1 { font-size: 20px; }
+}
